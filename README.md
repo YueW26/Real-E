@@ -46,14 +46,6 @@ The dataset can be tracked and downloaded using the following Zenodo link:
 
 - [Zenodo: BZN Dataset](https://zenodo.org/records/15685391)
 
-### Direct Download
-
-You can download the dataset directly using the following command:
-
-```bash
-wget "https://zenodo.org/records/15685391/files/O2O.zip?download=1" -O OLD.zip
-wget "https://zenodo.org/records/15685391/files/O2O.zip?download=1" -O O2O.zip
-wget "https://zenodo.org/records/15685391/files/O2O.zip?download=1" -O V60.zip
 
 ### Preprocessing 
 In this repository we leverage the preprocessed datasets.
