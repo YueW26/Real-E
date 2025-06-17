@@ -1,0 +1,8 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始加载数据集...
+==================================================
+使用兼容模式加载数据集: dataset/France_processed_0.csv
+兼容模式处理失败: 数据文件不存在: ./dataset/dataset/France_processed_0.csv
+❌ 数据集加载失败: 数据文件不存在: ./dataset/dataset/France_processed_0.csv

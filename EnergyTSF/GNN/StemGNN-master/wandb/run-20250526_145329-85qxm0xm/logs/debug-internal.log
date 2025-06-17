@@ -1,0 +1,15 @@
+{"time":"2025-05-26T14:53:29.972918909+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_145329-85qxm0xm/logs/debug-core.log"}
+{"time":"2025-05-26T14:53:30.459874676+02:00","level":"INFO","msg":"created new stream","id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:30.459906734+02:00","level":"INFO","msg":"stream: started","id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:30.459945916+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:30.459950665+02:00","level":"INFO","msg":"handler: started","stream_id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:30.45998391+02:00","level":"INFO","msg":"sender: started","stream_id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:30.891501037+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T14:53:40.951191228+02:00","level":"INFO","msg":"stream: closing","id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:40.951218537+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T14:53:40.951276716+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T14:53:41.625206735+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T14:53:41.933529277+02:00","level":"INFO","msg":"handler: closed","stream_id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:41.933582706+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:41.933605266+02:00","level":"INFO","msg":"sender: closed","stream_id":"85qxm0xm"}
+{"time":"2025-05-26T14:53:41.933633761+02:00","level":"INFO","msg":"stream: closed","id":"85qxm0xm"}

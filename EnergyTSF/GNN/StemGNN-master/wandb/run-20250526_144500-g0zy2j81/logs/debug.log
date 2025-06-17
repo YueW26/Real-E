@@ -1,0 +1,29 @@
+2025-05-26 14:45:00,080 INFO    MainThread:13879 [wandb_setup.py:_flush():68] Current SDK version is 0.19.10
+2025-05-26 14:45:00,080 INFO    MainThread:13879 [wandb_setup.py:_flush():68] Configure stats pid to 13879
+2025-05-26 14:45:00,080 INFO    MainThread:13879 [wandb_setup.py:_flush():68] Loading settings from /home/robot/.config/wandb/settings
+2025-05-26 14:45:00,080 INFO    MainThread:13879 [wandb_setup.py:_flush():68] Loading settings from /home/robot/GCN/5.26/StemGNN-master/wandb/settings
+2025-05-26 14:45:00,080 INFO    MainThread:13879 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-05-26 14:45:00,080 INFO    MainThread:13879 [wandb_init.py:setup_run_log_directory():724] Logging user logs to /home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_144500-g0zy2j81/logs/debug.log
+2025-05-26 14:45:00,081 INFO    MainThread:13879 [wandb_init.py:setup_run_log_directory():725] Logging internal logs to /home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_144500-g0zy2j81/logs/debug-internal.log
+2025-05-26 14:45:00,081 INFO    MainThread:13879 [wandb_init.py:init():852] calling init triggers
+2025-05-26 14:45:00,081 INFO    MainThread:13879 [wandb_init.py:init():857] wandb.init called with sweep_config: {}
+config: {'train': True, 'evaluate': True, 'dataset': 'France_processed_0', 'window_size': 12, 'horizon': 3, 'train_length': 7, 'valid_length': 2, 'test_length': 1, 'epoch': 50, 'lr': 0.0001, 'multi_layer': 5, 'device': 'cuda:0', 'validate_freq': 1, 'batch_size': 32, 'norm_method': 'z_score', 'optimizer': 'RMSProp', 'early_stop': False, 'exponential_decay_step': 5, 'decay_rate': 0.5, 'dropout_rate': 0.5, 'leakyrelu_rate': 0.2, 'runs': 1, 'wandb': True, 'wandb_project': 'StemGNN_france', 'experiment_name': 'France_processed_0_20250526_144458', '_wandb': {}}
+2025-05-26 14:45:00,081 INFO    MainThread:13879 [wandb_init.py:init():893] starting backend
+2025-05-26 14:45:00,081 INFO    MainThread:13879 [wandb_init.py:init():897] sending inform_init request
+2025-05-26 14:45:00,099 INFO    MainThread:13879 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-26 14:45:00,099 INFO    MainThread:13879 [wandb_init.py:init():907] backend started and connected
+2025-05-26 14:45:00,101 INFO    MainThread:13879 [wandb_init.py:init():1002] updated telemetry
+2025-05-26 14:45:00,101 INFO    MainThread:13879 [wandb_init.py:init():1026] communicating run to backend with 90.0 second timeout
+2025-05-26 14:45:00,804 INFO    MainThread:13879 [wandb_init.py:init():1101] starting run threads in backend
+2025-05-26 14:45:00,858 INFO    MainThread:13879 [wandb_run.py:_console_start():2566] atexit reg
+2025-05-26 14:45:00,859 INFO    MainThread:13879 [wandb_run.py:_redirect():2414] redirect: wrap_raw
+2025-05-26 14:45:00,859 INFO    MainThread:13879 [wandb_run.py:_redirect():2483] Wrapping output streams.
+2025-05-26 14:45:00,859 INFO    MainThread:13879 [wandb_run.py:_redirect():2506] Redirects installed.
+2025-05-26 14:45:00,859 INFO    MainThread:13879 [wandb_init.py:init():1147] run started, returning control to user process
+2025-05-26 14:45:20,193 INFO    MainThread:13879 [wandb_run.py:_finish():2314] finishing run zhanbo-huang-rwth-aachen-university/StemGNN_france/g0zy2j81
+2025-05-26 14:45:20,193 INFO    MainThread:13879 [wandb_run.py:_atexit_cleanup():2531] got exitcode: 0
+2025-05-26 14:45:20,193 INFO    MainThread:13879 [wandb_run.py:_restore():2513] restore
+2025-05-26 14:45:20,193 INFO    MainThread:13879 [wandb_run.py:_restore():2519] restore done
+2025-05-26 14:45:21,247 INFO    MainThread:13879 [wandb_run.py:_footer_history_summary_info():4160] rendering history
+2025-05-26 14:45:21,247 INFO    MainThread:13879 [wandb_run.py:_footer_history_summary_info():4192] rendering summary
+2025-05-26 14:45:21,248 INFO    MainThread:13879 [wandb_run.py:_footer_sync_info():4121] logging synced files

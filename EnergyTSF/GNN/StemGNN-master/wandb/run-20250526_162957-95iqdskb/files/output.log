@@ -1,0 +1,32 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始加载数据集...
+==================================================
+正在加载数据集: ECG_data
+检测到日期列: []
+检测到字符串列: []
+转换数据类型为数值...
+数据形状: (4999, 140)
+数据类型: float64
+数据范围: [-7.090, 7.402]
+✓ 数据质量检查通过
+✓ 数据集加载成功!
+开始第 1/1 次运行
+Total Trainable Params: 1123303
+> /home/robot/GCN/5.26/StemGNN-master/models/handler.py(201)train()
+-> forecast, _ = model(inputs)
+Traceback (most recent call last):
+  File "main.py", line 294, in <module>
+    results = run_single_experiment(0)
+  File "main.py", line 224, in run_single_experiment
+    train_metrics, normalize_statistic = train(train_data, valid_data, args, result_train_file, wandb_run)
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 201, in train
+    forecast, _ = model(inputs)
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 201, in train
+    forecast, _ = model(inputs)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

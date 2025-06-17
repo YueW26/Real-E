@@ -1,0 +1,51 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始加载数据集...
+==================================================
+正在加载数据集: Germany_processed_0
+检测到日期列: ['date']
+检测到字符串列: ['date']
+将跳过列: ['date']
+转换数据类型为数值...
+发现 42472 个NaN值的分布:
+  Nuclear  - Actual Aggregated [MW]: 42472 个 (12.8%)
+
+开始智能处理NaN值...
+  Nuclear  - Actual Aggregated [MW]: 缺失率12.8%，使用线性插值
+✓ 所有NaN值已成功处理
+数据形状: (333060, 16)
+数据类型: float64
+数据范围: [0.000, 48677.000]
+✓ 数据质量检查通过
+✓ 数据集加载成功!
+开始第 1/1 次运行
+Total Trainable Params: 1059815
+---------------------------------------------------------------------------------------------------
+提前退出训练
+Traceback (most recent call last):
+  File "main.py", line 192, in <module>
+    results = run_single_experiment(0)
+  File "main.py", line 167, in run_single_experiment
+    test_metrics = test(test_data, args, result_train_file, result_test_file, wandb_run)
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 292, in test
+    performance_metrics = validate(model, test_loader, args.device, args.norm_method, normalize_statistic,
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 71, in validate
+    forecast_norm, target_norm = inference(model, dataloader, device,
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 52, in inference
+    forecast_result, a = model(inputs)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/robot/GCN/5.26/StemGNN-master/models/base_model.py", line 178, in forward
+    mul_L, attention = self.latent_correlation_layer(x)
+  File "/home/robot/GCN/5.26/StemGNN-master/models/base_model.py", line 147, in latent_correlation_layer
+    input, _ = self.GRU(x.permute(2, 0, 1).contiguous())
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/site-packages/torch/nn/modules/rnn.py", line 1139, in forward
+    result = _VF.gru(input, hx, self._flat_weights, self.bias, self.num_layers,
+RuntimeError: Input and parameter tensors are not at the same device, found input tensor at cpu and parameter tensor at cuda:0

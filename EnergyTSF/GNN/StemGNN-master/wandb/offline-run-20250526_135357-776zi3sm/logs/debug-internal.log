@@ -1,0 +1,8 @@
+{"time":"2025-05-26T13:53:57.754618802+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/offline-run-20250526_135357-776zi3sm/logs/debug-core.log"}
+{"time":"2025-05-26T13:53:57.857924007+02:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2025-05-26T13:53:57.857980996+02:00","level":"INFO","msg":"created new stream","id":"776zi3sm"}
+{"time":"2025-05-26T13:53:57.857995244+02:00","level":"INFO","msg":"stream: started","id":"776zi3sm"}
+{"time":"2025-05-26T13:53:57.858021364+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"776zi3sm"}
+{"time":"2025-05-26T13:53:57.858034424+02:00","level":"INFO","msg":"sender: started","stream_id":"776zi3sm"}
+{"time":"2025-05-26T13:53:57.85806648+02:00","level":"INFO","msg":"handler: started","stream_id":"776zi3sm"}
+{"time":"2025-05-26T13:53:57.860716489+02:00","level":"INFO","msg":"Starting system monitor"}

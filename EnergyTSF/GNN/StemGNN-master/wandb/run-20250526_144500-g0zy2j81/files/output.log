@@ -1,0 +1,16 @@
+✓ Wandb 初始化成功
+开始第 1/1 次运行
+Total Trainable Params: 1059083
+| end of epoch   0 | time:  8.63s | train_total_loss 0.2351
+------ validate on data: VALIDATE ------
+NORM: MAPE 76.000595645%; MAE 0.317527844; RMSE 0.490809425.
+RAW : MAPE 63.589438102%; MAE 556.622945997; RMSE 1124.289047755.
+| end of epoch   1 | time:  8.23s | train_total_loss 0.1182
+------ validate on data: VALIDATE ------
+---------------------------------------------------------------------------------------------------
+提前退出训练
+NORM: MAPE 71.465244733%; MAE 0.363103267; RMSE 0.566385515.
+RAW : MAPE 84.609021923%; MAE 603.451103444; RMSE 1218.433522302.
+Performance on test set: MAPE:  0.85 | MAE: 603.45 | RMSE: 1218.4335
+第 1 次运行评估耗时: 0.01 分钟
+done

@@ -1,0 +1,16 @@
+{"time":"2025-05-26T16:08:49.738973806+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/offline-run-20250526_160849-gx5vtmh0/logs/debug-core.log"}
+{"time":"2025-05-26T16:08:49.842619343+02:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2025-05-26T16:08:49.842702454+02:00","level":"INFO","msg":"created new stream","id":"gx5vtmh0"}
+{"time":"2025-05-26T16:08:49.842716702+02:00","level":"INFO","msg":"stream: started","id":"gx5vtmh0"}
+{"time":"2025-05-26T16:08:49.842745197+02:00","level":"INFO","msg":"handler: started","stream_id":"gx5vtmh0"}
+{"time":"2025-05-26T16:08:49.842740448+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gx5vtmh0"}
+{"time":"2025-05-26T16:08:49.842797438+02:00","level":"INFO","msg":"sender: started","stream_id":"gx5vtmh0"}
+{"time":"2025-05-26T16:08:49.844967826+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T16:09:11.310548635+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T16:09:11.310584254+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T16:09:11.310922635+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-05-26T16:09:11.312485124+02:00","level":"INFO","msg":"stream: closing","id":"gx5vtmh0"}
+{"time":"2025-05-26T16:09:11.312494623+02:00","level":"INFO","msg":"handler: closed","stream_id":"gx5vtmh0"}
+{"time":"2025-05-26T16:09:11.312505308+02:00","level":"INFO","msg":"sender: closed","stream_id":"gx5vtmh0"}
+{"time":"2025-05-26T16:09:11.312500559+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gx5vtmh0"}
+{"time":"2025-05-26T16:09:11.312550426+02:00","level":"INFO","msg":"stream: closed","id":"gx5vtmh0"}

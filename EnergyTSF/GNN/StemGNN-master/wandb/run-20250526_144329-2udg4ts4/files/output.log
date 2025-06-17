@@ -1,0 +1,15 @@
+✓ Wandb 初始化成功
+开始第 1/1 次运行
+Traceback (most recent call last):
+  File "main.py", line 175, in <module>
+    results = run_single_experiment(0)
+  File "main.py", line 134, in run_single_experiment
+    train_metrics, normalize_statistic = train(train_data, valid_data, args, result_train_file, wandb_run)
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 134, in train
+    train_mean = np.mean(train_data, axis=0)
+  File "<__array_function__ internals>", line 200, in mean
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 3464, in mean
+    return _methods._mean(a, axis=axis, dtype=dtype,
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/site-packages/numpy/core/_methods.py", line 184, in _mean
+    ret = um.true_divide(
+TypeError: unsupported operand type(s) for /: 'str' and 'int'

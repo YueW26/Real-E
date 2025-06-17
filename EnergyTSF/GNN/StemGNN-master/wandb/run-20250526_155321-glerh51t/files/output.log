@@ -1,0 +1,77 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始加载数据集...
+==================================================
+正在加载数据集: ECG_data
+检测到日期列: []
+检测到字符串列: []
+转换数据类型为数值...
+数据形状: (4999, 140)
+数据类型: float64
+数据范围: [-7.090, 7.402]
+✓ 数据质量检查通过
+✓ 数据集加载成功!
+开始第 1/1 次运行
+> /home/robot/GCN/5.26/StemGNN-master/models/handler.py(131)train()
+-> if len(train_data) == 0:
+Model(
+  (GRU): GRU(12, 140)
+  (stock_block): ModuleList(
+    (0): StockBlockLayer(
+      (forecast): Linear(in_features=60, out_features=60, bias=True)
+      (forecast_result): Linear(in_features=60, out_features=12, bias=True)
+      (backcast): Linear(in_features=60, out_features=12, bias=True)
+      (backcast_short_cut): Linear(in_features=12, out_features=12, bias=True)
+      (relu): ReLU()
+      (GLUs): ModuleList(
+        (0-1): 2 x GLU(
+          (linear_left): Linear(in_features=48, out_features=240, bias=True)
+          (linear_right): Linear(in_features=48, out_features=240, bias=True)
+        )
+        (2-5): 4 x GLU(
+          (linear_left): Linear(in_features=240, out_features=240, bias=True)
+          (linear_right): Linear(in_features=240, out_features=240, bias=True)
+        )
+      )
+    )
+    (1): StockBlockLayer(
+      (forecast): Linear(in_features=60, out_features=60, bias=True)
+      (forecast_result): Linear(in_features=60, out_features=12, bias=True)
+      (backcast_short_cut): Linear(in_features=12, out_features=12, bias=True)
+      (relu): ReLU()
+      (GLUs): ModuleList(
+        (0-1): 2 x GLU(
+          (linear_left): Linear(in_features=48, out_features=240, bias=True)
+          (linear_right): Linear(in_features=48, out_features=240, bias=True)
+        )
+        (2-5): 4 x GLU(
+          (linear_left): Linear(in_features=240, out_features=240, bias=True)
+          (linear_right): Linear(in_features=240, out_features=240, bias=True)
+        )
+      )
+    )
+  )
+  (fc): Sequential(
+    (0): Linear(in_features=12, out_features=12, bias=True)
+    (1): LeakyReLU(negative_slope=0.01)
+    (2): Linear(in_features=12, out_features=3, bias=True)
+  )
+  (leakyrelu): LeakyReLU(negative_slope=0.2)
+  (dropout): Dropout(p=0.5, inplace=False)
+)
+--KeyboardInterrupt--
+Traceback (most recent call last):
+  File "main.py", line 287, in <module>
+    results = run_single_experiment(0)
+  File "main.py", line 217, in run_single_experiment
+    train_metrics, normalize_statistic = train(train_data, valid_data, args, result_train_file, wandb_run)
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 131, in train
+    if len(train_data) == 0:
+  File "/home/robot/GCN/5.26/StemGNN-master/models/handler.py", line 131, in train
+    if len(train_data) == 0:
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

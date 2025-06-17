@@ -1,0 +1,45 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始加载数据集...
+==================================================
+正在加载数据集: ECG_data
+检测到日期列: []
+检测到字符串列: []
+转换数据类型为数值...
+数据形状: (4999, 140)
+数据类型: float64
+数据范围: [-7.090, 7.402]
+✓ 数据质量检查通过
+✓ 数据集加载成功!
+开始第 1/1 次运行
+Total Trainable Params: 1123303
+| end of epoch   0 | time:  1.76s | train_total_loss 0.8800
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.744682763%; MAE 0.725965919; RMSE 0.978759407.
+RAW : MAPE 94.618672125%; MAE 0.398209722; RMSE 0.687175676.
+| end of epoch   1 | time:  1.62s | train_total_loss 0.8290
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.715960136%; MAE 0.703726112; RMSE 0.954546417.
+RAW : MAPE 92.574106118%; MAE 0.378327416; RMSE 0.645683742.
+| end of epoch   2 | time:  1.59s | train_total_loss 0.8189
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.430866379%; MAE 0.683028947; RMSE 0.937025440.
+RAW : MAPE 91.470336805%; MAE 0.361590928; RMSE 0.616223457.
+---------------------------------------------------------------------------------------------------
+提前退出训练
+NORM: MAPE 109.226069109%; MAE 0.645092342; RMSE 0.911306996.
+RAW : MAPE 87.932286515%; MAE 0.326627876; RMSE 0.540141421.
+Performance on test set: MAPE:  0.88 | MAE:  0.33 | RMSE: 0.5401
+✓ 测试指标已记录到 wandb
+第 1 次运行评估耗时: 0.00 分钟
+Traceback (most recent call last):
+  File "main.py", line 286, in <module>
+    save_results_to_csv([results], args.dataset, 1)
+  File "main.py", line 185, in save_results_to_csv
+    writer.writerow(result)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/csv.py", line 154, in writerow
+    return self.writer.writerow(self._dict_to_list(rowdict))
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/csv.py", line 149, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'test_metrics', 'interrupted'

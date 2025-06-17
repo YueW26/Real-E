@@ -1,0 +1,30 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始加载数据集...
+==================================================
+使用兼容模式加载数据集: dataset/France_processed_0.csv
+兼容模式加载完成:
+  数据形状: (83264, 10)
+  数据范围: [0.000000, 1.000000]
+  使用的数值列数: 10
+✓ 数据集加载成功!
+开始第 1/1 次运行
+Total Trainable Params: 1059083
+| end of epoch   0 | time: 10.02s | train_total_loss 0.6809
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.228943596%; MAE 0.773980104; RMSE 1.062424436.
+RAW : MAPE 114.131389992%; MAE 0.118164903; RMSE 0.163647591.
+| end of epoch   1 | time: 10.05s | train_total_loss 0.5859
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.352965765%; MAE 0.771807621; RMSE 1.061549419.
+RAW : MAPE 113.879932922%; MAE 0.117956192; RMSE 0.163632631.
+---------------------------------------------------------------------------------------------------
+提前退出训练
+NORM: MAPE 91.174329596%; MAE 0.797565220; RMSE 1.125466887.
+RAW : MAPE 134.658168700%; MAE 0.126886092; RMSE 0.181611825.
+Performance on test set: MAPE:  1.35 | MAE:  0.13 | RMSE: 0.1816
+✓ 测试指标已记录到 wandb
+第 1 次运行评估耗时: 0.01 分钟
+✓ 运行结果已保存到: output/results_France_processed_0_single_run.csv
+done

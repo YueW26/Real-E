@@ -1,0 +1,247 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始使用Dataset_Opennem类加载数据集...
+==================================================
+正在处理数据集: France_processed_0
+原始数据形状: (83265, 11)
+原始列名: ['date', 'Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用日期列: date
+处理缺失值...
+可用的数值列: ['Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用默认目标列: Wind Onshore  - Actual Aggregated [MW]
+数据预处理完成:
+  处理后形状: (83265, 11)
+  目标列: Wind Onshore  - Actual Aggregated [MW]
+  保存到: ./dataset/processed_France_processed_0.csv
+自动检测目标列: Wind Onshore  - Actual Aggregated [MW]
+数据集创建成功:
+  训练集大小: 58268
+  验证集大小: 8310
+  测试集大小: 16636
+应用0-1缩放...
+缩放后训练数据范围: [0.000000, 1.000000]
+✓ Dataset_Opennem 数据集加载成功!
+  数据集名称: France_processed_0
+  目标列: Wind Onshore  - Actual Aggregated [MW]
+  特征维度: 10
+  总样本数: 83214
+  数据形状: (83214, 10)
+
+提取训练、验证和测试数据...
+✓ 数据提取完成:
+  训练集形状: (58285, 10)
+  验证集形状: (8327, 10)
+  测试集形状: (16653, 10)
+  数据范围: [0.000000, 1.000000]
+  注意: Dataset_Opennem已自动按7:2:1比例划分训练/验证/测试集
+开始第 1/1 次运行
+Total Trainable Params: 1059122
+| end of epoch   0 | time:  9.22s | train_total_loss 0.7109
+------ validate on data: VALIDATE ------
+NORM: MAPE 95.763329175%; MAE 0.697003243; RMSE 0.968541833.
+RAW : MAPE 106.636410646%; MAE 0.117911681; RMSE 0.167602406.
+| end of epoch   1 | time:  9.38s | train_total_loss 0.6188
+------ validate on data: VALIDATE ------
+NORM: MAPE 95.259530143%; MAE 0.690446634; RMSE 0.961567687.
+RAW : MAPE 106.417177800%; MAE 0.116746743; RMSE 0.166209335.
+| end of epoch   2 | time:  8.97s | train_total_loss 0.6100
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.616753749%; MAE 0.685072899; RMSE 0.954855336.
+RAW : MAPE 106.009394258%; MAE 0.115811082; RMSE 0.164879742.
+| end of epoch   3 | time:  9.04s | train_total_loss 0.6040
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.594774840%; MAE 0.683292931; RMSE 0.952817814.
+RAW : MAPE 105.926503704%; MAE 0.115456575; RMSE 0.164473301.
+| end of epoch   4 | time:  8.88s | train_total_loss 0.5980
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.035520016%; MAE 0.678795323; RMSE 0.947611525.
+RAW : MAPE 105.665345574%; MAE 0.114691130; RMSE 0.163469687.
+| end of epoch   5 | time:  8.76s | train_total_loss 0.5935
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.259530844%; MAE 0.675337835; RMSE 0.944247898.
+RAW : MAPE 105.809125312%; MAE 0.113993472; RMSE 0.162742519.
+| end of epoch   6 | time:  8.98s | train_total_loss 0.5921
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.462959977%; MAE 0.674600612; RMSE 0.943585812.
+RAW : MAPE 105.602900286%; MAE 0.113930462; RMSE 0.162668829.
+| end of epoch   7 | time:  9.02s | train_total_loss 0.5908
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.410614394%; MAE 0.672341117; RMSE 0.941705098.
+RAW : MAPE 105.567688634%; MAE 0.113549924; RMSE 0.162337731.
+| end of epoch   8 | time:  8.71s | train_total_loss 0.5897
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.536175102%; MAE 0.671380252; RMSE 0.940902833.
+RAW : MAPE 105.559598678%; MAE 0.113380776; RMSE 0.162204655.
+| end of epoch   9 | time:  8.94s | train_total_loss 0.5889
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.328419545%; MAE 0.669831661; RMSE 0.939712760.
+RAW : MAPE 105.557841163%; MAE 0.113100878; RMSE 0.161947419.
+| end of epoch  10 | time:  8.88s | train_total_loss 0.5877
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.098492847%; MAE 0.669757736; RMSE 0.939322653.
+RAW : MAPE 105.506387618%; MAE 0.113095226; RMSE 0.161903250.
+| end of epoch  11 | time:  8.79s | train_total_loss 0.5872
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.441636085%; MAE 0.668885681; RMSE 0.939148538.
+RAW : MAPE 105.398735660%; MAE 0.112936650; RMSE 0.161865586.
+| end of epoch  12 | time:  8.92s | train_total_loss 0.5869
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.583588211%; MAE 0.667362824; RMSE 0.938133648.
+RAW : MAPE 105.283388723%; MAE 0.112652959; RMSE 0.161633541.
+| end of epoch  13 | time:  9.02s | train_total_loss 0.5865
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.027032216%; MAE 0.667270601; RMSE 0.937572760.
+RAW : MAPE 105.335508141%; MAE 0.112625920; RMSE 0.161521785.
+| end of epoch  14 | time:  9.03s | train_total_loss 0.5862
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.449022036%; MAE 0.667259282; RMSE 0.937808323.
+RAW : MAPE 105.361412106%; MAE 0.112633608; RMSE 0.161590817.
+| end of epoch  15 | time:  8.87s | train_total_loss 0.5856
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.621025136%; MAE 0.666729487; RMSE 0.937351507.
+RAW : MAPE 105.342604933%; MAE 0.112546869; RMSE 0.161510747.
+| end of epoch  16 | time:  9.02s | train_total_loss 0.5854
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.049700150%; MAE 0.666371615; RMSE 0.937384000.
+RAW : MAPE 105.274455371%; MAE 0.112467185; RMSE 0.161489705.
+| end of epoch  17 | time:  9.03s | train_total_loss 0.5853
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.012382046%; MAE 0.665989214; RMSE 0.937018863.
+RAW : MAPE 105.242013600%; MAE 0.112420983; RMSE 0.161449397.
+| end of epoch  18 | time:  8.89s | train_total_loss 0.5852
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.617995911%; MAE 0.665624204; RMSE 0.936808353.
+RAW : MAPE 105.219651037%; MAE 0.112342380; RMSE 0.161389377.
+| end of epoch  19 | time:  8.92s | train_total_loss 0.5851
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.043787936%; MAE 0.665849070; RMSE 0.936821509.
+RAW : MAPE 105.293383162%; MAE 0.112374344; RMSE 0.161398705.
+| end of epoch  20 | time:  9.04s | train_total_loss 0.5847
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.840655205%; MAE 0.665749049; RMSE 0.936877289.
+RAW : MAPE 105.242615543%; MAE 0.112369764; RMSE 0.161407121.
+| end of epoch  21 | time:  9.07s | train_total_loss 0.5847
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.535998122%; MAE 0.665656481; RMSE 0.936838016.
+RAW : MAPE 105.205430834%; MAE 0.112379845; RMSE 0.161423055.
+| end of epoch  22 | time:  9.15s | train_total_loss 0.5846
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.381861084%; MAE 0.665299732; RMSE 0.936219982.
+RAW : MAPE 105.271984501%; MAE 0.112298304; RMSE 0.161288244.
+| end of epoch  23 | time:  9.04s | train_total_loss 0.5845
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.304115096%; MAE 0.665389182; RMSE 0.936568215.
+RAW : MAPE 105.253920791%; MAE 0.112315786; RMSE 0.161367164.
+| end of epoch  24 | time:  8.79s | train_total_loss 0.5844
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.602232036%; MAE 0.665082190; RMSE 0.936430842.
+RAW : MAPE 105.186182892%; MAE 0.112261969; RMSE 0.161335554.
+| end of epoch  25 | time:  8.88s | train_total_loss 0.5843
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.876376432%; MAE 0.665013293; RMSE 0.936310364.
+RAW : MAPE 105.208091582%; MAE 0.112248101; RMSE 0.161306703.
+| end of epoch  26 | time:  8.72s | train_total_loss 0.5843
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.708504964%; MAE 0.664922842; RMSE 0.936339326.
+RAW : MAPE 105.185757315%; MAE 0.112231318; RMSE 0.161309456.
+| end of epoch  27 | time:  8.81s | train_total_loss 0.5843
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.862121213%; MAE 0.665031060; RMSE 0.936422505.
+RAW : MAPE 105.198326754%; MAE 0.112257085; RMSE 0.161336073.
+| end of epoch  28 | time:  8.66s | train_total_loss 0.5842
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.935610329%; MAE 0.664776764; RMSE 0.936138775.
+RAW : MAPE 105.200880279%; MAE 0.112211696; RMSE 0.161281193.
+| end of epoch  29 | time:  8.71s | train_total_loss 0.5841
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.045656084%; MAE 0.664692064; RMSE 0.936140505.
+RAW : MAPE 105.230680294%; MAE 0.112176802; RMSE 0.161256097.
+| end of epoch  30 | time:  8.69s | train_total_loss 0.5840
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.861514635%; MAE 0.664704840; RMSE 0.936166896.
+RAW : MAPE 105.200489918%; MAE 0.112195115; RMSE 0.161279490.
+| end of epoch  31 | time:  8.77s | train_total_loss 0.5841
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.868836159%; MAE 0.664637485; RMSE 0.936077298.
+RAW : MAPE 105.192981417%; MAE 0.112187162; RMSE 0.161264952.
+| end of epoch  32 | time:  9.05s | train_total_loss 0.5841
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.961819243%; MAE 0.664886276; RMSE 0.936204299.
+RAW : MAPE 105.214280039%; MAE 0.112233757; RMSE 0.161293777.
+| end of epoch  33 | time:  8.85s | train_total_loss 0.5840
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.967633200%; MAE 0.664773219; RMSE 0.936162226.
+RAW : MAPE 105.202759492%; MAE 0.112208934; RMSE 0.161284218.
+| end of epoch  34 | time:  9.21s | train_total_loss 0.5840
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.066039591%; MAE 0.664754319; RMSE 0.936148227.
+RAW : MAPE 105.216432910%; MAE 0.112197192; RMSE 0.161274287.
+| end of epoch  35 | time:  8.86s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.769953730%; MAE 0.664623186; RMSE 0.936060225.
+RAW : MAPE 105.186457716%; MAE 0.112183018; RMSE 0.161260738.
+| end of epoch  36 | time:  8.91s | train_total_loss 0.5840
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.729271410%; MAE 0.664632918; RMSE 0.936135451.
+RAW : MAPE 105.185039920%; MAE 0.112177622; RMSE 0.161267958.
+| end of epoch  37 | time:  8.94s | train_total_loss 0.5840
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.977825678%; MAE 0.664641865; RMSE 0.936078497.
+RAW : MAPE 105.203386914%; MAE 0.112181885; RMSE 0.161261512.
+| end of epoch  38 | time:  9.19s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.862729899%; MAE 0.664548028; RMSE 0.936031706.
+RAW : MAPE 105.197725326%; MAE 0.112159287; RMSE 0.161245178.
+| end of epoch  39 | time:  9.27s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.939550943%; MAE 0.664576614; RMSE 0.935969093.
+RAW : MAPE 105.206801836%; MAE 0.112163906; RMSE 0.161233531.
+| end of epoch  40 | time:  8.82s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.863064099%; MAE 0.664583862; RMSE 0.936032171.
+RAW : MAPE 105.193441303%; MAE 0.112173780; RMSE 0.161253975.
+| end of epoch  41 | time:  9.10s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.825752601%; MAE 0.664622418; RMSE 0.936096658.
+RAW : MAPE 105.192726512%; MAE 0.112178437; RMSE 0.161263582.
+| end of epoch  42 | time:  8.99s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.832637053%; MAE 0.664578568; RMSE 0.936062993.
+RAW : MAPE 105.191729945%; MAE 0.112171354; RMSE 0.161258243.
+| end of epoch  43 | time:  9.44s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.969539610%; MAE 0.664651120; RMSE 0.936095626.
+RAW : MAPE 105.204911442%; MAE 0.112183703; RMSE 0.161265469.
+| end of epoch  44 | time: 10.08s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.759921416%; MAE 0.664565636; RMSE 0.936084152.
+RAW : MAPE 105.184961732%; MAE 0.112170711; RMSE 0.161263092.
+| end of epoch  45 | time: 10.25s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.871512347%; MAE 0.664591397; RMSE 0.936060593.
+RAW : MAPE 105.196712242%; MAE 0.112172270; RMSE 0.161256619.
+| end of epoch  46 | time: 10.22s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.854797750%; MAE 0.664587171; RMSE 0.936045199.
+RAW : MAPE 105.194105658%; MAE 0.112174358; RMSE 0.161256288.
+| end of epoch  47 | time: 10.11s | train_total_loss 0.5838
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.907233655%; MAE 0.664624394; RMSE 0.936087610.
+RAW : MAPE 105.199385524%; MAE 0.112179456; RMSE 0.161263815.
+| end of epoch  48 | time: 10.16s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.871061098%; MAE 0.664579880; RMSE 0.936056110.
+RAW : MAPE 105.195984142%; MAE 0.112170743; RMSE 0.161256079.
+| end of epoch  49 | time:  9.94s | train_total_loss 0.5839
+------ validate on data: VALIDATE ------
+NORM: MAPE 92.888443944%; MAE 0.664612286; RMSE 0.936070048.
+RAW : MAPE 105.197198261%; MAE 0.112178231; RMSE 0.161261156.
+第 1 次运行训练耗时: 8.11 分钟
+NORM: MAPE 95.366332719%; MAE 0.833466978; RMSE 1.148526367.
+RAW : MAPE 138.523377019%; MAE 0.145868776; RMSE 0.206953259.
+Performance on test set: MAPE:  1.39 | MAE:  0.15 | RMSE: 0.2070
+✓ 测试指标已记录到 wandb
+第 1 次运行评估耗时: 0.02 分钟
+✓ 运行结果已保存到: output/results_France_processed_0_single_run.csv
+done

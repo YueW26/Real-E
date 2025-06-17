@@ -1,0 +1,146 @@
+2025-03-13 20:25:33.784987: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-03-13 20:25:34.608662: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [64,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [65,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [66,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [67,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [68,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [69,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [70,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [71,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [72,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [73,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [74,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [75,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [76,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [77,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [78,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [79,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [80,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [81,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [82,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [83,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [84,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [85,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [86,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [87,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [88,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [89,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [90,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [91,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [92,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [93,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [94,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+../aten/src/ATen/native/cuda/Indexing.cu:975: indexSelectLargeIndex: block: [159,0,0], thread: [95,0,0] Assertion `srcIndex < srcSelectDimSize` failed.
+Traceback (most recent call last):
+  File "/mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/TPGNN/main_tpgnn.py", line 257, in <module>
+    fire.Fire()
+  File "/mnt/webscistorage/cc7738/anaconda3/envs/Energy-TSF/lib/python3.8/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/mnt/webscistorage/cc7738/anaconda3/envs/Energy-TSF/lib/python3.8/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/mnt/webscistorage/cc7738/anaconda3/envs/Energy-TSF/lib/python3.8/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/TPGNN/main_tpgnn.py", line 185, in train
+    y_pred, loss = model(x, stamp, y, epoch)
+  File "/mnt/webscistorage/cc7738/anaconda3/envs/Energy-TSF/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/models/TPGNN/STAGNN_stamp.py", line 176, in forward
+    time_emb = self.stamp_emb(time_stamp)
+  File "/mnt/webscistorage/cc7738/anaconda3/envs/Energy-TSF/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/models/TPGNN/STAGNN_stamp.py", line 139, in forward
+    time_emb = self.tempral_enc(time_emb)
+  File "/mnt/webscistorage/cc7738/anaconda3/envs/Energy-TSF/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/models/TPGNN/Layers.py", line 90, in forward
+    res = torch.arange(start, start + length).to(device)
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+The input graph is a 0/1 matrix; set "scaling" to False.
+user config:
+seed 666
+device 0
+scaler StandardScaler()
+day_slot 288
+n_route 16
+n_his 96
+n_pred 96
+n_train 34
+n_val 5
+n_test 5
+mode 1
+n_c 10
+model STAGNN_stamp
+TPG TPGNN
+name lr1e-4_bs128_nh128_ra1e-3_dp0.1_wd1e-4_ah1_ck1_kt2
+log_path log/TPGNN_r05p02kt3outer_469
+crash 469
+new_name TPGNN_r05p02kt3outer_469
+batch_size 128
+lr 0.0001
+a 0.1
+r 0.5
+n_mask 1
+adam {'use': True, 'weight_decay': 0.0001}
+slr {'use': True, 'step_size': 400, 'gamma': 0.3}
+resume False
+start_epoch 0
+epochs 100
+n_layer 1
+n_attr 64
+n_hid 128
+reg_A 0.001
+circle 288
+drop_prob 0.1
+CE {'use': True, 'kernel_size': 1, 'bias': False}
+LE {'use': False, 'bias': False}
+SE {'use': True, 'separate': True, 'no': False}
+TE {'use': True, 'no': True}
+attn {'head': 1, 'd_k': 32, 'd_v': 32, 'drop_prob': 0.2}
+STstamp {'use': True, 'kt': 3, 'temperature': 1.0}
+T4N {'use': True, 'step': 2, 'end_epoch': 10000, 'change_head': True, 'change_enc': True}
+stamp_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/time_stamp_G_192.npy
+data_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/V_Germany_processed_0.csv
+adj_matrix_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/W_Germany_processed_0.csv
+dis_mat tensor([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 1.],
+        [0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
+        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0.]],
+       device='cuda:0')
+prefix log/lr1e-4_bs128_nh128_ra1e-3_dp0.1_wd1e-4_ah1_ck1_kt2/
+checkpoint_temp_path log/lr1e-4_bs128_nh128_ra1e-3_dp0.1_wd1e-4_ah1_ck1_kt2//temp.pth
+checkpoint_best_path log/lr1e-4_bs128_nh128_ra1e-3_dp0.1_wd1e-4_ah1_ck1_kt2//best.pth
+tensorboard_path log/lr1e-4_bs128_nh128_ra1e-3_dp0.1_wd1e-4_ah1_ck1_kt2/
+record_path log/lr1e-4_bs128_nh128_ra1e-3_dp0.1_wd1e-4_ah1_ck1_kt2/record.txt
+eps 0.1
+parse <bound method DefaultConfig.parse of <config.DefaultConfig object at 0x7faac6494550>>
+output <bound method DefaultConfig.output of <config.DefaultConfig object at 0x7faac6494550>>
+train: True, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 9792
+len(data): 9792, day_slot: 288, n_day: 34
+train: False, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 1440, day_slot: 288, n_day: 5
+train: False, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 1440, day_slot: 288, n_day: 5
+16 10
+Finished training with: lr1e-4_bs128_nh128_ra1e-3_dp0.1_wd1e-4_ah1_ck1_kt2
+2025-03-13 20:25:44.165201: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-03-13 20:25:44.963406: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT

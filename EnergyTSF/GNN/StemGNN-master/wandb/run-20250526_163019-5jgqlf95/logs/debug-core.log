@@ -1,0 +1,15 @@
+{"time":"2025-05-26T16:30:18.854089159+02:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp5bzebs_b/port-40791.txt","pid":40791,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-05-26T16:30:18.855735942+02:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":40791}
+{"time":"2025-05-26T16:30:18.855734754+02:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":41727,"Zone":""}}
+{"time":"2025-05-26T16:30:19.047235215+02:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:30:19.400123887+02:00","level":"INFO","msg":"handleInformInit: received","streamId":"5jgqlf95","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:30:19.71996531+02:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"5jgqlf95","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:58.263420135+02:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"5jgqlf95","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:58.263521056+02:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"5jgqlf95","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:59.263052459+02:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:59.263083329+02:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:59.26309164+02:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-05-26T16:31:59.263096389+02:00","level":"INFO","msg":"connection: closing","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:59.263146256+02:00","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:59.263152192+02:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:44960"}
+{"time":"2025-05-26T16:31:59.263161691+02:00","level":"INFO","msg":"server is closed"}

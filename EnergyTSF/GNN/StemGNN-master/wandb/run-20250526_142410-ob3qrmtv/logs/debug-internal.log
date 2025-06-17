@@ -1,0 +1,16 @@
+{"time":"2025-05-26T14:24:10.668177241+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_142410-ob3qrmtv/logs/debug-core.log"}
+{"time":"2025-05-26T14:24:11.048896383+02:00","level":"INFO","msg":"created new stream","id":"ob3qrmtv"}
+{"time":"2025-05-26T14:24:11.048924877+02:00","level":"INFO","msg":"stream: started","id":"ob3qrmtv"}
+{"time":"2025-05-26T14:24:11.048954559+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ob3qrmtv"}
+{"time":"2025-05-26T14:24:11.048983053+02:00","level":"INFO","msg":"sender: started","stream_id":"ob3qrmtv"}
+{"time":"2025-05-26T14:24:11.049054288+02:00","level":"INFO","msg":"handler: started","stream_id":"ob3qrmtv"}
+{"time":"2025-05-26T14:24:11.359313293+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T14:25:48.529871378+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T14:25:48.529908188+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T14:25:49.532474237+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.554284385,"progress":"11.2KB/11.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.262345569,"progress":"1.2KB/1.2KB"}],"total_operations":2}}
+{"time":"2025-05-26T14:25:49.680865398+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T14:25:49.990163266+02:00","level":"INFO","msg":"stream: closing","id":"ob3qrmtv"}
+{"time":"2025-05-26T14:25:49.990176328+02:00","level":"INFO","msg":"handler: closed","stream_id":"ob3qrmtv"}
+{"time":"2025-05-26T14:25:49.99018464+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ob3qrmtv"}
+{"time":"2025-05-26T14:25:49.990192952+02:00","level":"INFO","msg":"sender: closed","stream_id":"ob3qrmtv"}
+{"time":"2025-05-26T14:25:49.990228575+02:00","level":"INFO","msg":"stream: closed","id":"ob3qrmtv"}

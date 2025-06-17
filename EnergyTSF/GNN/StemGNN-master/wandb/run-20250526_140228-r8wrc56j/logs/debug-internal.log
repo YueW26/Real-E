@@ -1,0 +1,16 @@
+{"time":"2025-05-26T14:02:28.301277824+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_140228-r8wrc56j/logs/debug-core.log"}
+{"time":"2025-05-26T14:02:28.690555259+02:00","level":"INFO","msg":"created new stream","id":"r8wrc56j"}
+{"time":"2025-05-26T14:02:28.690590883+02:00","level":"INFO","msg":"stream: started","id":"r8wrc56j"}
+{"time":"2025-05-26T14:02:28.69063363+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"r8wrc56j"}
+{"time":"2025-05-26T14:02:28.690645505+02:00","level":"INFO","msg":"sender: started","stream_id":"r8wrc56j"}
+{"time":"2025-05-26T14:02:28.69069419+02:00","level":"INFO","msg":"handler: started","stream_id":"r8wrc56j"}
+{"time":"2025-05-26T14:02:29.002880612+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T14:04:00.77202381+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T14:04:00.772051121+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T14:04:01.773592578+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.605499729,"progress":"11.2KB/11.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.605484293,"progress":"861B/861B"},{"desc":"uploading config.yaml","runtime_seconds":0.298321985,"progress":"1.2KB/1.2KB"}],"total_operations":3}}
+{"time":"2025-05-26T14:04:01.885855764+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T14:04:02.194625798+02:00","level":"INFO","msg":"stream: closing","id":"r8wrc56j"}
+{"time":"2025-05-26T14:04:02.194636485+02:00","level":"INFO","msg":"handler: closed","stream_id":"r8wrc56j"}
+{"time":"2025-05-26T14:04:02.194647171+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"r8wrc56j"}
+{"time":"2025-05-26T14:04:02.194650734+02:00","level":"INFO","msg":"sender: closed","stream_id":"r8wrc56j"}
+{"time":"2025-05-26T14:04:02.194687544+02:00","level":"INFO","msg":"stream: closed","id":"r8wrc56j"}

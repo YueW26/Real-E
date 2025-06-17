@@ -1,0 +1,15 @@
+{"time":"2025-05-26T15:48:37.571307733+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_154837-hwyvhrrm/logs/debug-core.log"}
+{"time":"2025-05-26T15:48:37.850712266+02:00","level":"INFO","msg":"created new stream","id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:37.850756208+02:00","level":"INFO","msg":"stream: started","id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:37.850768084+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:37.850815589+02:00","level":"INFO","msg":"handler: started","stream_id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:37.85082984+02:00","level":"INFO","msg":"sender: started","stream_id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:38.070579403+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T15:48:46.35521873+02:00","level":"INFO","msg":"stream: closing","id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:46.355240107+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T15:48:46.355275735+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T15:48:47.005061729+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T15:48:47.216444869+02:00","level":"INFO","msg":"handler: closed","stream_id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:47.216478122+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:47.216516125+02:00","level":"INFO","msg":"sender: closed","stream_id":"hwyvhrrm"}
+{"time":"2025-05-26T15:48:47.21654344+02:00","level":"INFO","msg":"stream: closed","id":"hwyvhrrm"}

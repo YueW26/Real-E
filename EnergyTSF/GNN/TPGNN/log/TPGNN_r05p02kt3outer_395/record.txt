@@ -1,0 +1,133 @@
+user config:
+seed 666
+device 0
+scaler StandardScaler()
+day_slot 576
+n_route 10
+n_his 96
+n_pred 96
+n_train 34
+n_val 5
+n_test 5
+mode 1
+n_c 10
+model STAGNN_stamp
+TPG TPGNN
+name lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6
+log_path log/TPGNN_r05p02kt3outer_395
+crash 395
+new_name TPGNN_r05p02kt3outer_395
+batch_size 64
+lr 0.001
+a 0.1
+r 0.5
+n_mask 1
+adam {'use': True, 'weight_decay': 0.0001}
+slr {'use': True, 'step_size': 400, 'gamma': 0.3}
+resume False
+start_epoch 0
+epochs 100
+n_layer 1
+n_attr 64
+n_hid 64
+reg_A 0.001
+circle 288
+drop_prob 0.3
+CE {'use': True, 'kernel_size': 1, 'bias': False}
+LE {'use': False, 'bias': False}
+SE {'use': True, 'separate': True, 'no': False}
+TE {'use': True, 'no': True}
+attn {'head': 1, 'd_k': 32, 'd_v': 32, 'drop_prob': 0.2}
+STstamp {'use': True, 'kt': 3, 'temperature': 1.0}
+T4N {'use': True, 'step': 2, 'end_epoch': 10000, 'change_head': True, 'change_enc': True}
+stamp_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/time_stamp_F_96_R_0301.npy
+data_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/V_France_processed_0.csv
+adj_matrix_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/F_pearson_correlation_matrix.csv
+dis_mat tensor([[0.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000,
+         1.0000],
+        [1.0000, 0.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000,
+         1.0000],
+        [1.0000, 1.0000, 0.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000,
+         1.0000],
+        [1.0000, 1.0000, 1.0000, 0.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000,
+         1.0000],
+        [1.0000, 1.0000, 1.0000, 1.0000, 0.0000, 1.0000, 1.0000, 1.0000, 1.0000,
+         1.0000],
+        [1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, 1.0000, 1.0000, 1.0000,
+         1.0000],
+        [1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, 1.0000, 1.0000,
+         1.0000],
+        [1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000, 1.0000,
+         1.0000],
+        [1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 0.0000,
+         1.0000],
+        [1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000,
+         0.0000]], device='cuda:0')
+prefix log/lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6/
+checkpoint_temp_path log/lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6//temp.pth
+checkpoint_best_path log/lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6//best.pth
+tensorboard_path log/lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6/
+record_path log/lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6/record.txt
+eps 0.1
+parse <bound method DefaultConfig.parse of <config.DefaultConfig object at 0x7f1b2b055550>>
+output <bound method DefaultConfig.output of <config.DefaultConfig object at 0x7f1b2b055550>>
+train: True, day_slot: 576, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 9792
+len(data): 19584, day_slot: 576, n_day: 34
+train: False, day_slot: 576, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 2880, day_slot: 576, n_day: 5
+train: False, day_slot: 576, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 2880, day_slot: 576, n_day: 5
+10 10
+epoch 0   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 2.274968007031609 , validation loss: 0.8815577395500676
+epoch 1   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 1.356537417453878 , validation loss: 0.669971521823637
+epoch 2   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.9253148033338434 , validation loss: 0.5583436815969406
+epoch 3   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.6858779735424939 , validation loss: 0.5479473317823103
+epoch 4   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.5420351256342495 , validation loss: 0.576197273308231
+epoch 5   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.4493856745607713 , validation loss: 0.5710739983666328
+epoch 6   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.3865787467243625 , validation loss: 0.5271674163879887
+epoch 7   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.34350234620711384 , validation loss: 0.596815207312184
+epoch 8   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.3128746807867405 , validation loss: 0.5440154710123616
+epoch 9   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.290423111734437 , validation loss: 0.5188531250722946
+epoch 10   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2738564708361439 , validation loss: 0.542479460277865
+epoch 11   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.26178304887577597 , validation loss: 0.5231249861178859
+epoch 12   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.25234473445544053 , validation loss: 0.5017924789459475
+epoch 13   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.24501780325583383 , validation loss: 0.5360070043994535
+epoch 14   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2392295527399755 , validation loss: 0.5317739892390466
+epoch 15   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2346973463746847 , validation loss: 0.5607953792618167
+epoch 16   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.23054225070803774 , validation loss: 0.5596721585719816
+epoch 17   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.22777980069319406 , validation loss: 0.527212014121394
+epoch 18   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.22552133453827278 , validation loss: 0.6085863670995159
+epoch 19   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2237272934586394 , validation loss: 0.5294085827565962
+epoch 20   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2219537595177398 , validation loss: 0.5075770501167544
+epoch 21   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.22026989404477326 , validation loss: 0.543357987557688
+epoch 22   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2195353232616303 , validation loss: 0.5444131060954063
+epoch 23   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21804480831704887 , validation loss: 0.48415896488774207
+epoch 24   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2172131554460993 , validation loss: 0.5273837533689314
+epoch 25   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21641670152837156 , validation loss: 0.519792127993799
+epoch 26   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21556308551454076 , validation loss: 0.5084820831975629
+epoch 27   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21462335583626055 , validation loss: 0.4846868380423515
+epoch 28   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21408713937682264 , validation loss: 0.5923845604542763
+epoch 29   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21412588553685769 , validation loss: 0.49705780321551907
+epoch 30   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21301091352806373 , validation loss: 0.5971213973337605
+epoch 31   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21241394817536952 , validation loss: 0.5843010371731173
+epoch 32   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2123204963464363 , validation loss: 0.5098456432742458
+epoch 33   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2119157230298893 , validation loss: 0.5130366759915506
+epoch 34   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21073866993481039 , validation loss: 0.567093308894865
+epoch 35   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21028836385584346 , validation loss: 0.4805843743585771
+epoch 36   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21014106763052007 , validation loss: 0.5086654674622321
+epoch 37   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.21067016995420643 , validation loss: 0.5996943991030416
+epoch 38   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2094901185847965 , validation loss: 0.5066048464467449
+epoch 39   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2091136864003013 , validation loss: 0.7310711472265182
+epoch 40   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20900242490803494 , validation loss: 0.48959990759049693
+epoch 41   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20761120297452984 , validation loss: 0.5336967687452993
+epoch 42   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20761588508007572 , validation loss: 0.5195461059770277
+epoch 43   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2071999398370584 , validation loss: 0.48841721684701983
+epoch 44   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20660518511545425 , validation loss: 0.5172559907359462
+epoch 45   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20649438731226266 , validation loss: 0.49227570141515425
+epoch 46   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20617751243944263 , validation loss: 0.5109199939235565
+epoch 47   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.2058965472467974 , validation loss: 0.5062460582102498
+epoch 48   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20538949601206125 , validation loss: 0.49575600797130215
+epoch 49   lr1e-3_bs64_nh64_ra1e-3_dp0.3_wd1e-6_ah1_ck(1 3 5)__kt6 , train loss: 0.20660642651366254 , validation loss: 0.5867107885499154

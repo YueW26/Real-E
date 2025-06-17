@@ -1,0 +1,15 @@
+{"time":"2025-05-26T16:09:24.020326486+02:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp6pq_obs5/port-36256.txt","pid":36256,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-05-26T16:09:24.022689217+02:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":36256}
+{"time":"2025-05-26T16:09:24.022685655+02:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":35141,"Zone":""}}
+{"time":"2025-05-26T16:09:24.213512362+02:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:09:24.235306473+02:00","level":"INFO","msg":"handleInformInit: received","streamId":"m344rve3","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:09:24.340616581+02:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"m344rve3","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:04.000640861+02:00","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"m344rve3","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:04.000778588+02:00","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"m344rve3","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:05.000827184+02:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:05.000862803+02:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:05.000871114+02:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-05-26T16:10:05.000879426+02:00","level":"INFO","msg":"connection: closing","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:05.000936416+02:00","level":"INFO","msg":"connection: closed successfully","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:05.00094354+02:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:36720"}
+{"time":"2025-05-26T16:10:05.000953038+02:00","level":"INFO","msg":"server is closed"}

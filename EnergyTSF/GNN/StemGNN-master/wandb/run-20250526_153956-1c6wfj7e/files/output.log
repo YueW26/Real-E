@@ -1,0 +1,43 @@
+✓ Wandb 初始化成功
+
+==================================================
+开始加载数据集...
+==================================================
+正在加载数据集: Germany_processed_0
+检测到日期列: ['date']
+检测到字符串列: ['date']
+将跳过列: ['date']
+转换数据类型为数值...
+发现 42472 个NaN值的分布:
+  Nuclear  - Actual Aggregated [MW]: 42472 个 (12.8%)
+
+开始智能处理NaN值...
+  Nuclear  - Actual Aggregated [MW]: 缺失率12.8%，使用线性插值
+✓ 所有NaN值已成功处理
+数据形状: (333060, 16)
+数据类型: float64
+数据范围: [0.000, 48677.000]
+✓ 数据质量检查通过
+✓ 数据集加载成功!
+开始第 1/1 次运行
+Total Trainable Params: 1059815
+| end of epoch   0 | time: 256.34s | train_total_loss 0.0565
+------ validate on data: VALIDATE ------
+NORM: MAPE 36.926688829%; MAE 0.150963454; RMSE 0.326139420.
+RAW : MAPE 35.769063532%; MAE 236.726332166; RMSE 559.793369885.
+第 1 次运行训练耗时: 4.66 分钟
+NORM: MAPE 38.084516088%; MAE 0.277260043; RMSE 0.597725168.
+RAW : MAPE 63.458727976%; MAE 433.683204857; RMSE 961.735715756.
+Performance on test set: MAPE:  0.63 | MAE: 433.68 | RMSE: 961.7357
+✓ 测试指标已记录到 wandb
+第 1 次运行评估耗时: 0.18 分钟
+Traceback (most recent call last):
+  File "main.py", line 286, in <module>
+    save_results_to_csv([results], args.dataset, 1)
+  File "main.py", line 185, in save_results_to_csv
+    writer.writerow(result)
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/csv.py", line 154, in writerow
+    return self.writer.writerow(self._dict_to_list(rowdict))
+  File "/home/robot/.conda/envs/pytorch_cuda116_env/lib/python3.8/csv.py", line 149, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'test_metrics', 'train_metrics'

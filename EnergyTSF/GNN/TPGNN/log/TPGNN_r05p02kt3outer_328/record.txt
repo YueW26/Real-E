@@ -1,0 +1,83 @@
+user config:
+seed 666
+device 0
+scaler StandardScaler()
+day_slot 288
+n_route 10
+n_his 96
+n_pred 96
+n_train 34
+n_val 5
+n_test 5
+mode 1
+n_c 10
+model STAGNN_stamp
+TPG TPGNN
+name lr1e-3_bs64_nh128_ra1e-4_dp0.3_wd1e-5_ah2_ck3_kt2
+log_path log/TPGNN_r05p02kt3outer_328
+crash 328
+new_name TPGNN_r05p02kt3outer_328
+batch_size 64
+lr 0.001
+a 0.1
+r 0.5
+n_mask 1
+adam {'use': True, 'weight_decay': 0.0001}
+slr {'use': True, 'step_size': 400, 'gamma': 0.3}
+resume False
+start_epoch 0
+epochs 100
+n_layer 1
+n_attr 64
+n_hid 128
+reg_A 0.0001
+circle 288
+drop_prob 0.3
+CE {'use': True, 'kernel_size': 1, 'bias': False}
+LE {'use': False, 'bias': False}
+SE {'use': True, 'separate': True, 'no': False}
+TE {'use': True, 'no': True}
+attn {'head': 1, 'd_k': 32, 'd_v': 32, 'drop_prob': 0.2}
+STstamp {'use': True, 'kt': 3, 'temperature': 1.0}
+T4N {'use': True, 'step': 2, 'end_epoch': 10000, 'change_head': True, 'change_enc': True}
+stamp_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/time_stamp_F_192.npy
+data_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/V_France_processed_0.csv
+adj_matrix_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/W_France_processed_0.csv
+dis_mat tensor([[0.0000, 0.3661, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.6136, 0.0000,
+         0.0000],
+        [0.3661, 0.0000, 0.0000, 0.0000, 0.1098, 0.0000, 0.0000, 0.8975, 0.4288,
+         0.0000],
+        [0.0000, 0.0000, 0.0000, 0.3410, 0.8975, 0.0000, 0.0000, 0.0000, 0.4288,
+         0.0000],
+        [0.0000, 0.0000, 0.3410, 0.0000, 0.1547, 0.0000, 0.0000, 0.0000, 0.0000,
+         0.1494],
+        [0.0000, 0.1098, 0.8975, 0.1547, 0.0000, 0.0000, 0.0000, 0.0000, 0.6996,
+         0.0000],
+        [0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.8104, 0.0000, 0.0000,
+         0.2289],
+        [0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.8104, 0.0000, 0.0000, 0.0000,
+         0.5594],
+        [0.6136, 0.8975, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.2117,
+         0.0000],
+        [0.0000, 0.4288, 0.4288, 0.0000, 0.6996, 0.0000, 0.0000, 0.2117, 0.0000,
+         0.0000],
+        [0.0000, 0.0000, 0.0000, 0.1494, 0.0000, 0.2289, 0.5594, 0.0000, 0.0000,
+         0.0000]], device='cuda:0')
+prefix log/lr1e-3_bs64_nh128_ra1e-4_dp0.3_wd1e-5_ah2_ck3_kt2/
+checkpoint_temp_path log/lr1e-3_bs64_nh128_ra1e-4_dp0.3_wd1e-5_ah2_ck3_kt2//temp.pth
+checkpoint_best_path log/lr1e-3_bs64_nh128_ra1e-4_dp0.3_wd1e-5_ah2_ck3_kt2//best.pth
+tensorboard_path log/lr1e-3_bs64_nh128_ra1e-4_dp0.3_wd1e-5_ah2_ck3_kt2/
+record_path log/lr1e-3_bs64_nh128_ra1e-4_dp0.3_wd1e-5_ah2_ck3_kt2/record.txt
+eps 0.1
+parse <bound method DefaultConfig.parse of <config.DefaultConfig object at 0x7fa33d295550>>
+output <bound method DefaultConfig.output of <config.DefaultConfig object at 0x7fa33d295550>>
+train: True, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 9792
+len(data): 9792, day_slot: 288, n_day: 34
+train: False, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 1440, day_slot: 288, n_day: 5
+train: False, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 1440, day_slot: 288, n_day: 5
+10 10

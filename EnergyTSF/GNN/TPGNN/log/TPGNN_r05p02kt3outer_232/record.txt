@@ -1,0 +1,203 @@
+The input graph is a 0/1 matrix; set "scaling" to False.
+user config:
+seed 666
+device 0
+scaler StandardScaler()
+day_slot 288
+n_route 16
+n_his 96
+n_pred 96
+n_train 34
+n_val 5
+n_test 5
+mode 1
+n_c 10
+model STAGNN_stamp
+TPG TPGNN
+name lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4
+log_path log/TPGNN_r05p02kt3outer_232
+crash 232
+new_name TPGNN_r05p02kt3outer_232
+batch_size 256
+lr 0.001
+a 0.1
+r 0.5
+n_mask 1
+adam {'use': True, 'weight_decay': 0.0001}
+slr {'use': True, 'step_size': 400, 'gamma': 0.3}
+resume False
+start_epoch 0
+epochs 100
+n_layer 1
+n_attr 64
+n_hid 64
+reg_A 0.0001
+circle 288
+drop_prob 0.1
+CE {'use': True, 'kernel_size': 1, 'bias': False}
+LE {'use': False, 'bias': False}
+SE {'use': True, 'separate': True, 'no': False}
+TE {'use': True, 'no': True}
+attn {'head': 1, 'd_k': 32, 'd_v': 32, 'drop_prob': 0.2}
+STstamp {'use': True, 'kt': 3, 'temperature': 1.0}
+T4N {'use': True, 'step': 2, 'end_epoch': 10000, 'change_head': True, 'change_enc': True}
+stamp_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/time_stamp_G_192.npy
+data_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/V_Germany_processed_0.csv
+adj_matrix_path /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/TPGNN/datasets/W_Germany_processed_0.csv
+dis_mat tensor([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 1.],
+        [0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0.],
+        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0.]],
+       device='cuda:0')
+prefix log/lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4/
+checkpoint_temp_path log/lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4//temp.pth
+checkpoint_best_path log/lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4//best.pth
+tensorboard_path log/lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4/
+record_path log/lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4/record.txt
+eps 0.1
+parse <bound method DefaultConfig.parse of <config.DefaultConfig object at 0x7f3d084d55e0>>
+output <bound method DefaultConfig.output of <config.DefaultConfig object at 0x7f3d084d55e0>>
+train: True, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 9792
+len(data): 9792, day_slot: 288, n_day: 34
+train: False, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 1440, day_slot: 288, n_day: 5
+train: False, day_slot: 288, n_his: 96, n_pred: 96, T4N_step: 2
+n_slot (calculated): 1440
+len(data): 1440, day_slot: 288, n_day: 5
+16 10
+epoch 0   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 1   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 2   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 3   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 4   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 5   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 6   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 7   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 8   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 9   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 10   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 11   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 12   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 13   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 14   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 15   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 16   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 17   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 18   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 19   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 20   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 21   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 22   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 23   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 24   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 25   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 26   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 27   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 28   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 29   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 30   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 31   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 32   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 33   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 34   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 35   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 36   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 37   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 38   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 39   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 40   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 41   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 42   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 43   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 44   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 45   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 46   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 47   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 48   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 49   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 50   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 51   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 52   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 53   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 54   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 55   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 56   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 57   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 58   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 59   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 60   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 61   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 62   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 63   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 64   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 65   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 66   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 67   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 68   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 69   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 70   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 71   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 72   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 73   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 74   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 75   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 76   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 77   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 78   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 79   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 80   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 81   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 82   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 83   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 84   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 85   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 86   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 87   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 88   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 89   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 90   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 91   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 92   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 93   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 94   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 95   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+epoch 96   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+tensor(nan, device='cuda:0')
+MAE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] , MAPE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] %, RMSE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+epoch 97   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+tensor(nan, device='cuda:0')
+MAE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] , MAPE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] %, RMSE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+epoch 98   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+tensor(nan, device='cuda:0')
+MAE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] , MAPE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] %, RMSE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+epoch 99   lr1e-3_bs256_nh64_ra1e-4_dp0.1_wd1e-5_ah2_ck5_kt4 , train loss: nan , validation loss: nan
+tensor(nan, device='cuda:0')
+MAE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] , MAPE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] %, RMSE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+test loss: NIL 
+MAE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] , MAPE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] %, RMSE: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+====================
+training elapsedd with 418.26 seconds for 100 iterations, the sec/iter = 4.18
+
+MAE_mean: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.] , MAPE_mean: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.] , RMSE_mean: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0.]
+
+MAE_std: [nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan] , MAPE_std: [nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan] , RMSE_std: [nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan]

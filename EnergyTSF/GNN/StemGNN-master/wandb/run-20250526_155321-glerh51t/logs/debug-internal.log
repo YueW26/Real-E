@@ -1,0 +1,15 @@
+{"time":"2025-05-26T15:53:21.143786705+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_155321-glerh51t/logs/debug-core.log"}
+{"time":"2025-05-26T15:53:21.422190447+02:00","level":"INFO","msg":"created new stream","id":"glerh51t"}
+{"time":"2025-05-26T15:53:21.422223694+02:00","level":"INFO","msg":"stream: started","id":"glerh51t"}
+{"time":"2025-05-26T15:53:21.422286626+02:00","level":"INFO","msg":"sender: started","stream_id":"glerh51t"}
+{"time":"2025-05-26T15:53:21.422309187+02:00","level":"INFO","msg":"handler: started","stream_id":"glerh51t"}
+{"time":"2025-05-26T15:53:21.422290189+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"glerh51t"}
+{"time":"2025-05-26T15:53:21.678894454+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T15:55:05.738261613+02:00","level":"INFO","msg":"stream: closing","id":"glerh51t"}
+{"time":"2025-05-26T15:55:05.738279424+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T15:55:05.738337605+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T15:55:06.427169718+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T15:55:06.68658287+02:00","level":"INFO","msg":"handler: closed","stream_id":"glerh51t"}
+{"time":"2025-05-26T15:55:06.686616116+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"glerh51t"}
+{"time":"2025-05-26T15:55:06.686651737+02:00","level":"INFO","msg":"sender: closed","stream_id":"glerh51t"}
+{"time":"2025-05-26T15:55:06.686682609+02:00","level":"INFO","msg":"stream: closed","id":"glerh51t"}

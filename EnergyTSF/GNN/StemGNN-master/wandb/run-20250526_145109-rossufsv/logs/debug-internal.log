@@ -1,0 +1,16 @@
+{"time":"2025-05-26T14:51:09.885033327+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_145109-rossufsv/logs/debug-core.log"}
+{"time":"2025-05-26T14:51:10.273091529+02:00","level":"INFO","msg":"created new stream","id":"rossufsv"}
+{"time":"2025-05-26T14:51:10.273118837+02:00","level":"INFO","msg":"stream: started","id":"rossufsv"}
+{"time":"2025-05-26T14:51:10.273136647+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"rossufsv"}
+{"time":"2025-05-26T14:51:10.273149708+02:00","level":"INFO","msg":"handler: started","stream_id":"rossufsv"}
+{"time":"2025-05-26T14:51:10.27318414+02:00","level":"INFO","msg":"sender: started","stream_id":"rossufsv"}
+{"time":"2025-05-26T14:51:10.582903823+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T14:53:45.084680483+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T14:53:45.084714915+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T14:53:45.908324066+02:00","level":"INFO","msg":"stream: closing","id":"rossufsv"}
+{"time":"2025-05-26T14:53:45.908352562+02:00","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-05-26T14:53:46.029508537+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T14:53:46.281528068+02:00","level":"INFO","msg":"handler: closed","stream_id":"rossufsv"}
+{"time":"2025-05-26T14:53:46.2815625+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rossufsv"}
+{"time":"2025-05-26T14:53:46.281589809+02:00","level":"INFO","msg":"sender: closed","stream_id":"rossufsv"}
+{"time":"2025-05-26T14:53:46.281612368+02:00","level":"INFO","msg":"stream: closed","id":"rossufsv"}

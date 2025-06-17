@@ -1,0 +1,15 @@
+{"time":"2025-05-26T15:34:24.298125847+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_153424-du1i459i/logs/debug-core.log"}
+{"time":"2025-05-26T15:34:24.711967549+02:00","level":"INFO","msg":"created new stream","id":"du1i459i"}
+{"time":"2025-05-26T15:34:24.712006727+02:00","level":"INFO","msg":"stream: started","id":"du1i459i"}
+{"time":"2025-05-26T15:34:24.712034034+02:00","level":"INFO","msg":"handler: started","stream_id":"du1i459i"}
+{"time":"2025-05-26T15:34:24.712043531+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"du1i459i"}
+{"time":"2025-05-26T15:34:24.712058965+02:00","level":"INFO","msg":"sender: started","stream_id":"du1i459i"}
+{"time":"2025-05-26T15:34:25.022490402+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T15:39:54.106236955+02:00","level":"INFO","msg":"stream: closing","id":"du1i459i"}
+{"time":"2025-05-26T15:39:54.1062607+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T15:39:54.106298692+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T15:39:54.739525497+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T15:39:54.962093504+02:00","level":"INFO","msg":"handler: closed","stream_id":"du1i459i"}
+{"time":"2025-05-26T15:39:54.962116062+02:00","level":"INFO","msg":"sender: closed","stream_id":"du1i459i"}
+{"time":"2025-05-26T15:39:54.962108938+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"du1i459i"}
+{"time":"2025-05-26T15:39:54.962161177+02:00","level":"INFO","msg":"stream: closed","id":"du1i459i"}

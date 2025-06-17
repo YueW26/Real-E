@@ -1,0 +1,7 @@
+{"time":"2025-05-26T14:42:41.661350735+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_144241-mcyhf27o/logs/debug-core.log"}
+{"time":"2025-05-26T14:42:42.049807724+02:00","level":"INFO","msg":"created new stream","id":"mcyhf27o"}
+{"time":"2025-05-26T14:42:42.049843343+02:00","level":"INFO","msg":"stream: started","id":"mcyhf27o"}
+{"time":"2025-05-26T14:42:42.049863527+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"mcyhf27o"}
+{"time":"2025-05-26T14:42:42.049881337+02:00","level":"INFO","msg":"handler: started","stream_id":"mcyhf27o"}
+{"time":"2025-05-26T14:42:42.049909832+02:00","level":"INFO","msg":"sender: started","stream_id":"mcyhf27o"}
+{"time":"2025-05-26T14:42:42.300096689+02:00","level":"INFO","msg":"Starting system monitor"}

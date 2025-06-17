@@ -1,0 +1,15 @@
+{"time":"2025-05-26T15:55:36.050534927+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/run-20250526_155536-qlx108p9/logs/debug-core.log"}
+{"time":"2025-05-26T15:55:36.364415255+02:00","level":"INFO","msg":"created new stream","id":"qlx108p9"}
+{"time":"2025-05-26T15:55:36.364444939+02:00","level":"INFO","msg":"stream: started","id":"qlx108p9"}
+{"time":"2025-05-26T15:55:36.364465124+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"qlx108p9"}
+{"time":"2025-05-26T15:55:36.364499558+02:00","level":"INFO","msg":"handler: started","stream_id":"qlx108p9"}
+{"time":"2025-05-26T15:55:36.36450312+02:00","level":"INFO","msg":"sender: started","stream_id":"qlx108p9"}
+{"time":"2025-05-26T15:55:36.65516586+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T16:05:30.719222963+02:00","level":"INFO","msg":"stream: closing","id":"qlx108p9"}
+{"time":"2025-05-26T16:05:30.719243147+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T16:05:30.719264519+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T16:05:32.518259648+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T16:05:32.74253905+02:00","level":"INFO","msg":"handler: closed","stream_id":"qlx108p9"}
+{"time":"2025-05-26T16:05:32.742572294+02:00","level":"INFO","msg":"sender: closed","stream_id":"qlx108p9"}
+{"time":"2025-05-26T16:05:32.742571107+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qlx108p9"}
+{"time":"2025-05-26T16:05:32.742637596+02:00","level":"INFO","msg":"stream: closed","id":"qlx108p9"}

@@ -1,0 +1,16 @@
+{"time":"2025-05-26T16:09:24.237117109+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/home/robot/GCN/5.26/StemGNN-master/wandb/offline-run-20250526_160923-m344rve3/logs/debug-core.log"}
+{"time":"2025-05-26T16:09:24.340512098+02:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2025-05-26T16:09:24.340598772+02:00","level":"INFO","msg":"created new stream","id":"m344rve3"}
+{"time":"2025-05-26T16:09:24.340611832+02:00","level":"INFO","msg":"stream: started","id":"m344rve3"}
+{"time":"2025-05-26T16:09:24.340645076+02:00","level":"INFO","msg":"sender: started","stream_id":"m344rve3"}
+{"time":"2025-05-26T16:09:24.340630829+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"m344rve3"}
+{"time":"2025-05-26T16:09:24.340664073+02:00","level":"INFO","msg":"handler: started","stream_id":"m344rve3"}
+{"time":"2025-05-26T16:09:24.343146721+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T16:10:03.99795281+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T16:10:03.997999115+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T16:10:03.998434854+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-05-26T16:10:04.000657483+02:00","level":"INFO","msg":"stream: closing","id":"m344rve3"}
+{"time":"2025-05-26T16:10:04.000674105+02:00","level":"INFO","msg":"handler: closed","stream_id":"m344rve3"}
+{"time":"2025-05-26T16:10:04.000681229+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"m344rve3"}
+{"time":"2025-05-26T16:10:04.00068954+02:00","level":"INFO","msg":"sender: closed","stream_id":"m344rve3"}
+{"time":"2025-05-26T16:10:04.000765527+02:00","level":"INFO","msg":"stream: closed","id":"m344rve3"}

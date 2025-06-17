@@ -1,0 +1,197 @@
+✓ Wandb 超参数搜索初始化成功
+
+[1/10] 测试 window_size=6, horizon=6
+----------------------------------------
+正在处理数据集: France_processed_0
+原始数据形状: (83265, 11)
+原始列名: ['date', 'Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用日期列: date
+处理缺失值...
+可用的数值列: ['Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用默认目标列: Wind Onshore  - Actual Aggregated [MW]
+数据预处理完成:
+  处理后形状: (83265, 11)
+  目标列: Wind Onshore  - Actual Aggregated [MW]
+  保存到: ./dataset/processed_France_processed_0.csv
+自动检测目标列: Wind Onshore  - Actual Aggregated [MW]
+数据集创建成功:
+  训练集大小: 58274
+  验证集大小: 8316
+  测试集大小: 16642
+应用0-1缩放...
+缩放后训练数据范围: [0.000000, 1.000000]
+数据加载完成: 训练集(58285, 10), 验证集(8327, 10), 测试集(16653, 10)
+开始训练...
+Total Trainable Params: 266666
+| end of epoch   0 | time: 17.05s | train_total_loss 1.1512
+------ validate on data: VALIDATE ------
+NORM: MAPE 179.134405268%; MAE 0.947516833; RMSE 1.185237102.
+RAW : MAPE 130.720586063%; MAE 0.157501083; RMSE 0.203980181.
+| end of epoch   1 | time: 20.27s | train_total_loss 0.9545
+------ validate on data: VALIDATE ------
+NORM: MAPE 149.963617486%; MAE 0.833624766; RMSE 1.078366154.
+RAW : MAPE 120.443385519%; MAE 0.139588048; RMSE 0.186084590.
+| end of epoch   2 | time: 20.91s | train_total_loss 0.7453
+------ validate on data: VALIDATE ------
+NORM: MAPE 113.839352005%; MAE 0.733523711; RMSE 0.993153923.
+RAW : MAPE 110.629709111%; MAE 0.123758867; RMSE 0.171795207.
+| end of epoch   3 | time: 20.84s | train_total_loss 0.6584
+------ validate on data: VALIDATE ------
+NORM: MAPE 110.832338142%; MAE 0.727291603; RMSE 0.982904207.
+RAW : MAPE 109.563303352%; MAE 0.122954967; RMSE 0.170050944.
+| end of epoch   4 | time: 19.50s | train_total_loss 0.6437
+------ validate on data: VALIDATE ------
+NORM: MAPE 98.591916500%; MAE 0.704596493; RMSE 0.969652638.
+RAW : MAPE 107.200043666%; MAE 0.119204223; RMSE 0.167915102.
+训练完成，耗时: 1.75 分钟
+开始测试...
+NORM: MAPE 98.818225529%; MAE 0.867251957; RMSE 1.180572233.
+RAW : MAPE 140.078695207%; MAE 0.151708835; RMSE 0.213002004.
+Performance on test set: MAPE:  1.40 | MAE:  0.15 | RMSE: 0.2130
+✓ 测试指标已记录到 wandb
+测试完成，耗时: 0.04 分钟
+Seq Length  6, Pred Length  6: MAE=0.1517, RMSE=0.2130
+
+[2/10] 测试 window_size=12, horizon=6
+----------------------------------------
+正在处理数据集: France_processed_0
+原始数据形状: (83265, 11)
+原始列名: ['date', 'Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用日期列: date
+处理缺失值...
+可用的数值列: ['Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用默认目标列: Wind Onshore  - Actual Aggregated [MW]
+数据预处理完成:
+  处理后形状: (83265, 11)
+  目标列: Wind Onshore  - Actual Aggregated [MW]
+  保存到: ./dataset/processed_France_processed_0.csv
+自动检测目标列: Wind Onshore  - Actual Aggregated [MW]
+数据集创建成功:
+  训练集大小: 58268
+  验证集大小: 8310
+  测试集大小: 16636
+应用0-1缩放...
+缩放后训练数据范围: [0.000000, 1.000000]
+数据加载完成: 训练集(58285, 10), 验证集(8327, 10), 测试集(16653, 10)
+开始训练...
+Total Trainable Params: 1059122
+| end of epoch   0 | time: 21.51s | train_total_loss 0.6889
+------ validate on data: VALIDATE ------
+NORM: MAPE 97.523051797%; MAE 0.688798281; RMSE 0.962340183.
+RAW : MAPE 106.745738203%; MAE 0.116189189; RMSE 0.166098261.
+| end of epoch   1 | time: 20.42s | train_total_loss 0.6261
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.920463554%; MAE 0.684685101; RMSE 0.960134813.
+RAW : MAPE 106.375419361%; MAE 0.115544181; RMSE 0.165808970.
+| end of epoch   2 | time: 19.65s | train_total_loss 0.6185
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.357469201%; MAE 0.682461856; RMSE 0.957193727.
+RAW : MAPE 106.233617493%; MAE 0.115124567; RMSE 0.165238856.
+| end of epoch   3 | time: 22.31s | train_total_loss 0.6111
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.140858469%; MAE 0.680538065; RMSE 0.953943365.
+RAW : MAPE 106.101201414%; MAE 0.114838440; RMSE 0.164632113.
+| end of epoch   4 | time: 22.02s | train_total_loss 0.6059
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.266832949%; MAE 0.680636510; RMSE 0.952844982.
+RAW : MAPE 106.167886944%; MAE 0.114912585; RMSE 0.164443637.
+训练完成，耗时: 1.86 分钟
+开始测试...
+NORM: MAPE 94.916467647%; MAE 0.849415169; RMSE 1.166981567.
+RAW : MAPE 139.204547386%; MAE 0.148616892; RMSE 0.210395351.
+Performance on test set: MAPE:  1.39 | MAE:  0.15 | RMSE: 0.2104
+✓ 测试指标已记录到 wandb
+测试完成，耗时: 0.04 分钟
+Seq Length 12, Pred Length  6: MAE=0.1486, RMSE=0.2104
+
+[3/10] 测试 window_size=12, horizon=12
+----------------------------------------
+正在处理数据集: France_processed_0
+原始数据形状: (83265, 11)
+原始列名: ['date', 'Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用日期列: date
+处理缺失值...
+可用的数值列: ['Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用默认目标列: Wind Onshore  - Actual Aggregated [MW]
+数据预处理完成:
+  处理后形状: (83265, 11)
+  目标列: Wind Onshore  - Actual Aggregated [MW]
+  保存到: ./dataset/processed_France_processed_0.csv
+自动检测目标列: Wind Onshore  - Actual Aggregated [MW]
+数据集创建成功:
+  训练集大小: 58262
+  验证集大小: 8304
+  测试集大小: 16630
+应用0-1缩放...
+缩放后训练数据范围: [0.000000, 1.000000]
+数据加载完成: 训练集(58285, 10), 验证集(8327, 10), 测试集(16653, 10)
+开始训练...
+Total Trainable Params: 1059200
+| end of epoch   0 | time: 17.81s | train_total_loss 0.7484
+------ validate on data: VALIDATE ------
+NORM: MAPE 98.745622940%; MAE 0.711841654; RMSE 0.987056408.
+RAW : MAPE 107.791073827%; MAE 0.120489419; RMSE 0.171003792.
+| end of epoch   1 | time: 18.39s | train_total_loss 0.6513
+------ validate on data: VALIDATE ------
+NORM: MAPE 102.545121945%; MAE 0.714496649; RMSE 0.988987117.
+RAW : MAPE 108.222783238%; MAE 0.120857844; RMSE 0.171436215.
+| end of epoch   2 | time: 18.05s | train_total_loss 0.6344
+------ validate on data: VALIDATE ------
+NORM: MAPE 103.486402996%; MAE 0.713007336; RMSE 0.989146313.
+RAW : MAPE 108.097157187%; MAE 0.120614867; RMSE 0.171510831.
+| end of epoch   3 | time: 18.48s | train_total_loss 0.6272
+------ validate on data: VALIDATE ------
+NORM: MAPE 105.193076770%; MAE 0.715800690; RMSE 0.991876319.
+RAW : MAPE 108.258921637%; MAE 0.121147619; RMSE 0.172109347.
+| end of epoch   4 | time: 18.00s | train_total_loss 0.6230
+------ validate on data: VALIDATE ------
+NORM: MAPE 107.960761726%; MAE 0.721497489; RMSE 0.997826163.
+RAW : MAPE 108.848726197%; MAE 0.122094131; RMSE 0.173014910.
+训练完成，耗时: 1.59 分钟
+开始测试...
+NORM: MAPE 99.951563281%; MAE 0.878682717; RMSE 1.195080283.
+RAW : MAPE 140.787212228%; MAE 0.153702044; RMSE 0.215578722.
+Performance on test set: MAPE:  1.41 | MAE:  0.15 | RMSE: 0.2156
+✓ 测试指标已记录到 wandb
+测试完成，耗时: 0.03 分钟
+Seq Length 12, Pred Length 12: MAE=0.1537, RMSE=0.2156
+
+[4/10] 测试 window_size=48, horizon=6
+----------------------------------------
+正在处理数据集: France_processed_0
+原始数据形状: (83265, 11)
+原始列名: ['date', 'Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用日期列: date
+处理缺失值...
+可用的数值列: ['Biomass  - Actual Aggregated [MW]', 'Fossil Gas  - Actual Aggregated [MW]', 'Fossil Hard coal  - Actual Aggregated [MW]', 'Fossil Oil  - Actual Aggregated [MW]', 'Hydro Run-of-river and poundage  - Actual Aggregated [MW]', 'Hydro Water Reservoir  - Actual Aggregated [MW]', 'Nuclear  - Actual Aggregated [MW]', 'Solar  - Actual Aggregated [MW]', 'Waste  - Actual Aggregated [MW]', 'Wind Onshore  - Actual Aggregated [MW]']
+使用默认目标列: Wind Onshore  - Actual Aggregated [MW]
+数据预处理完成:
+  处理后形状: (83265, 11)
+  目标列: Wind Onshore  - Actual Aggregated [MW]
+  保存到: ./dataset/processed_France_processed_0.csv
+自动检测目标列: Wind Onshore  - Actual Aggregated [MW]
+数据集创建成功:
+  训练集大小: 58232
+  验证集大小: 8274
+  测试集大小: 16600
+应用0-1缩放...
+缩放后训练数据范围: [0.000000, 1.000000]
+数据加载完成: 训练集(58285, 10), 验证集(8327, 10), 测试集(16653, 10)
+开始训练...
+Total Trainable Params: 16863554
+| end of epoch   0 | time: 38.54s | train_total_loss 0.6074
+------ validate on data: VALIDATE ------
+NORM: MAPE 93.336584423%; MAE 0.668871869; RMSE 0.934981004.
+RAW : MAPE 105.054849852%; MAE 0.112799650; RMSE 0.160883061.
+| end of epoch   1 | time: 38.98s | train_total_loss 0.5847
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.141023437%; MAE 0.663043088; RMSE 0.931739052.
+RAW : MAPE 105.015801466%; MAE 0.111664709; RMSE 0.160177960.
+| end of epoch   2 | time: 33.91s | train_total_loss 0.5813
+------ validate on data: VALIDATE ------
+NORM: MAPE 91.362502132%; MAE 0.659303943; RMSE 0.930337432.
+RAW : MAPE 104.655562178%; MAE 0.111082161; RMSE 0.159982949.
+| end of epoch   3 | time: 32.35s | train_total_loss 0.5789
+------ validate on data: VALIDATE ------
+NORM: MAPE 94.490859681%; MAE 0.661278318; RMSE 0.930334573.
+RAW : MAPE 104.863087511%; MAE 0.111373960; RMSE 0.159958180.

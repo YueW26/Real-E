@@ -1,0 +1,75 @@
+_wandb:
+    value:
+        cli_version: 0.19.10
+        m: []
+        python_version: 3.8.20
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+                - 23
+                - 55
+            "4": 3.8.20
+            "5": 0.19.10
+            "8":
+                - 5
+            "12": 0.19.10
+            "13": linux-x86_64
+batch_size:
+    value: 32
+dataset:
+    value: ECG_data_0
+decay_rate:
+    value: 0.5
+device:
+    value: cuda:0
+dropout_rate:
+    value: 0.5
+early_stop:
+    value: false
+epoch:
+    value: 50
+evaluate:
+    value: true
+experiment_name:
+    value: ECG_data_0_20250526_142409
+exponential_decay_step:
+    value: 5
+horizon:
+    value: 3
+leakyrelu_rate:
+    value: 0.2
+lr:
+    value: 0.0001
+multi_layer:
+    value: 5
+norm_method:
+    value: z_score
+optimizer:
+    value: RMSProp
+runs:
+    value: 1
+test_length:
+    value: 1
+train:
+    value: true
+train_length:
+    value: 7
+valid_length:
+    value: 2
+validate_freq:
+    value: 1
+wandb:
+    value: true
+wandb_project:
+    value: StemGNN
+window_size:
+    value: 12
