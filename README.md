@@ -3,6 +3,9 @@
 
 Real-E is a comprehensive, high-resolution benchmark dataset for **multivariate time series forecasting in electricity systems**. It spans 10 years across 39 European countries, including over 74 electricity stations and 20+ energy categories. With rich metadata, non-stationary dynamics, and high temporal granularity, Real-E provides a rigorous foundation for developing and evaluating robust forecasting models.
 
+
+
+![cover](figures/cover%20img3.png)
 ---
 
 ## 📚 Background and Motivation
@@ -21,7 +24,9 @@ While many recent models (especially Transformer and GNN-based ones) show promis
 
 ---
 
-## 🧱 Dataset Overview
+##  Dataset
+
+### 🧱 Dataset Overview
 
 | Property                  | Description |
 |---------------------------|-------------|
@@ -33,26 +38,16 @@ While many recent models (especially Transformer and GNN-based ones) show promis
 | 🧭 Metadata               | Geolocation, Bidding Zone, Voltage Level, Plant Type |
 | 🧵 Modalities             | Generation, Load, Market Pricing, Transmission, Balancing |
 
-Each power station is provided as a separate multivariate CSV file with aligned metadata.
 
 ---
 
-
-# BZN Dataset
-
-This repository provides access to the BZN dataset, available for download and use in research projects.
-
-## Dataset Overview
-
-The BZN dataset contains valuable data designed for graph convolution network for multivariant time series forecasting. This dataset is hosted on Zenodo and can be easily accessed using the link below.
-
-## How to Access the Dataset
+### How to Access the Dataset
 
 The dataset can be tracked and downloaded using the following Zenodo link:
 
 - [Zenodo: BZN Dataset](https://zenodo.org/records/13835030?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjE1MTY1NGY4LTA1OGUtNDRhMC1hZTI2LWI3MGMyZTI0MGY0MSIsImRhdGEiOnt9LCJyYW5kb20iOiI1NTQwYmU1YTM1N2M0ZTdkNzljYzZjMjdhYmM0MmViZSJ9.epUG3JX3xZafWQ8VHlYaUFCLUrsCmQ2zIamGuFI935TfHuzmDybQx3koqiYn-rqGl9IjsNx4-Qvc8Nwi6is6og)
 
-## Direct Download
+### Direct Download
 
 You can download the dataset directly using the following command:
 
@@ -61,9 +56,12 @@ bash
 wget "https://zenodo.org/records/13952409/files/BZN.zip?download=1" -O BZN.zip
 ```
 
-## Preprocessing 
-In this repository we leverage the preprocessed datasets, including germany, ..... could be found under /mnt/datasets.
+### Preprocessing 
+In this repository we leverage the preprocessed datasets.
 
+![4.2c](figures/4.2c.png)
+![4.2c](figures/daily.png)
+![4.2c](figures/daily1.png)
 
 ## 📈 Metrics and Analysis
 
@@ -75,12 +73,6 @@ Measures magnitude of correlation changes over time via Frobenius norm.
 ### 🧠 Graph Spectral Divergence (GSD)
 Measures shifts in Laplacian eigenvalues to detect structural volatility.
 
-| Dataset     | TGV   | GSD   |
-|-------------|-------|-------|
-| Electricity | 0.5391 | 1.4394 |
-| ETTm1       | 0.7534 | 1.9210 |
-| Solar       | 0.6245 | 1.8027 |
-| **\data**  | **0.9046** | **2.2086** |
 
 ---
 
@@ -89,23 +81,16 @@ Measures shifts in Laplacian eigenvalues to detect structural volatility.
 We benchmark 20 models from different families:
 
 ### 🔢 Classical Methods
-- ARIMA
-- S-ARIMA
-- VAR
+- ARIMA, S-ARIMA, VAR
 
 ### 🧠 MLP-based
-- DLinear
-- N-Beats
-- TimeMixer
+- DLinear, N-Beats, TimeMixer
 
 ### 🔁 RNN/CNN
 - LSTM, TCN, DeepGLO, SFM
 
 ### 🧠 Transformer-based
-- Informer
-- Autoformer
-- FEDformer
-- Reformer
+- Informer, Autoformer, FEDformer, Reformer
 
 ### 🌐 Graph Neural Networks
 - Spectral GNNs: FourierGNN, LSGCN, StemGNN
@@ -113,9 +98,11 @@ We benchmark 20 models from different families:
 
 ### 📊 Results Summary
 
-- **Transformers perform well on small benchmarks**, but degrade >50% in MAE on \data.
-- **Spatial GNNs outperform all models on \data**, thanks to dynamic correlation modeling.
-- **FourierGNN and WaveNet** showed the best robustness across dynamic regimes.
+- **New Correlation Metrics** reveal temporal and structural shifts in energy systems.
+- **Spatial GNNs** adapt better to non-stationary, policy-driven, and seasonal regimes. **FourierGNN and WaveNet** showed the best robustness across dynamic regimes.
+- **Transformer models** struggle with heterogeneous, multi-energy, multi-national inputs.
+- We release all data, preprocessing scripts, and model configs for reproducibility.
+
 
 See full table in the paper for detailed MAE/RMSE rankings.
 
@@ -175,19 +162,7 @@ python /EnergyTSF/run.py \
 
 ---
 
-## 💡 Research Highlights
 
-- **New Correlation Metrics** reveal temporal and structural shifts in energy systems.
-- **Spatial GNNs** adapt better to non-stationary, policy-driven, and seasonal regimes.
-- **Transformer models** struggle with heterogeneous, multi-energy, multi-national inputs.
-- We release all data, preprocessing scripts, and model configs for reproducibility.
-
----
-
-## 📎 Citation
-
-
----
 
 ## 📬 Contact
 
