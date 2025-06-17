@@ -44,7 +44,7 @@ While many recent models (especially Transformer and GNN-based ones) show promis
 
 The dataset can be tracked and downloaded using the following Zenodo link:
 
-- [Zenodo: Real-e (OLD O20 V60)](https://zenodo.org/records/15685391)
+- [Zenodo: Real-e (OLD O20 V60)]([https://zenodo.org/records/15685822])
 
 
 ### Preprocessing 
