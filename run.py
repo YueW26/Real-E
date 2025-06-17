@@ -224,17 +224,3 @@ if __name__ == '__main__':
 
 
 
-# python /mnt/webscistorage/cc7738/ws_joella/EnergyTSF/run.py \
-#   --task_name long_term_forecast \
-#   --is_training 1 \
-#   --model_id Reformer_test \
-#   --model Reformer \
-#   --data Opennem \
-#   --data_path Germany_processed_0.csv \
-#   --features M \
-#   --seq_len 12 --label_len 12 --pred_len 12 \
-#   --enc_in 16 --dec_in 16 --c_out 16 \
-#   --des 'debug_run' --itr 1
-
-
-
