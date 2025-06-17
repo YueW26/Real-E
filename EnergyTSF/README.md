@@ -1,7 +1,7 @@
 
-# ⚡ \data: The Largest Real-World Multivariate Electricity Forecasting Benchmark
+# ⚡ Real-E: The Largest Real-World Multivariate Electricity Forecasting Benchmark
 
-\data is a comprehensive, high-resolution benchmark dataset for **multivariate time series forecasting in electricity systems**. It spans 10 years across 39 European countries, including over 74 electricity stations and 20+ energy categories. With rich metadata, non-stationary dynamics, and high temporal granularity, \data provides a rigorous foundation for developing and evaluating robust forecasting models.
+Real-E is a comprehensive, high-resolution benchmark dataset for **multivariate time series forecasting in electricity systems**. It spans 10 years across 39 European countries, including over 74 electricity stations and 20+ energy categories. With rich metadata, non-stationary dynamics, and high temporal granularity, Real-E provides a rigorous foundation for developing and evaluating robust forecasting models.
 
 ---
 
