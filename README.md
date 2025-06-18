@@ -44,7 +44,7 @@ While many recent models (especially Transformer and GNN-based ones) show promis
 
 We provide three versions of the dataset:
 
-1. **OLD**: Retains the raw data without preprocessing.  
+1. **OLD**: Retains the raw data.  
 2. **V60**: Ensures that each time interval has at least 60% valid data.  
 3. **O20**: Filters out variables with an overlapping rate below 20%.  
 
