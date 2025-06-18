@@ -42,6 +42,13 @@ While many recent models (especially Transformer and GNN-based ones) show promis
 
 ### How to Access the Dataset
 
+We provide three dataset versions: 
+1.the \textbf{OLD} version retains raw data; 
+2.the \textbf{V60} version ensures that each time interval has at least 60\% valid data; 
+3.the \textbf{O20} version filters out variables with an overlapping rate below 20\%. 
+We also provide variable-level visualization plots for each sub-dataset to support intuitive exploration and quality assessment. 
+Each version contains four subdirectories: \texttt{BZN}, \texttt{CTA}, \texttt{CTY}, and \texttt{Statistic}, which organize the data by bidding zones, control areas, countries, and visual statistical analysis, respectively. This multi-version design supports a wide range of forecasting and evaluation scenarios.
+
 The dataset can be tracked and downloaded using the following Zenodo link:
 
 - [Zenodo: Real-E (OLD O20 V60)](https://zenodo.org/records/15685930)
